@@ -8,6 +8,10 @@ body {
     font-size: 16px;
     border-bottom: 1px solid #ddd;
     padding: 16px 0; }
+    body #app h1 .info {
+      color: #bbb;
+      font-size: 12px;
+      font-weight: normal; }
   body #app ul {
     padding: 0;
     list-style: none; }
