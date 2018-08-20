@@ -1,0 +1,25 @@
+{
+  "name": "vue_training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss css/style.sass css/style.css",
+    "watch-css": "node-sass --include-path scss css/style.sass css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reika0717/Vue_training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reika0717/Vue_training/issues"
+  },
+  "homepage": "https://github.com/reika0717/Vue_training#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3"
+  }
+}
