@@ -12,3 +12,7 @@ body {
     line-height: 1.5; }
   body #app input[type="text"] {
     padding: 2px; }
+  body #app .command {
+    font-size: 12px;
+    cursor: pointer;
+    color: #08c; }
