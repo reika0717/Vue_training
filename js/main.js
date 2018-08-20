@@ -8,15 +8,28 @@
 		data: {
 			newItem: '',
 			todos: [
-				'task 1',
-				'task 2',
-				'task 3'
+				{
+					title: 'task 1',
+					isDone: false
+				},
+				{
+					title: 'task 2',
+					isDone: false
+				},
+				{
+					title: 'task 3',
+					isDone: true
+				}
 			]
 		},
 		methods: {
 			addItem: function() {
+				var item = {
+					title: this.newItem,
+					isDone: false
+				}
 				// e.preventDefault();s
-				this.todos.push(this.newItem)
+				this.todos.push(item)
 				this.newItem=''
 			},
 			deleteItem: function(index) {
