@@ -1,16 +1,28 @@
 (function() {
   'use strict';
 
+
   //Components
 
   var likeComponent = Vue.extend({
-    template: '<button>like</button>'
+    data: function() {
+      return {
+        count: 0
+      }
+    },
+    template: '<button @click="countup">like {{ count }}</button>',
+    methods: {
+      'countup': function () {
+        this.count++;
+      }
+    }
   })
 
-  var vm = new Vue({
+  var app = new Vue({
     el: '#app',
     components: {
       'like-component': likeComponent
     }
-  })
+  });
+
 })();
